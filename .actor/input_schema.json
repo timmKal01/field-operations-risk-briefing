@@ -1,0 +1,23 @@
+{
+    "title": "Field Operations Risk Briefing Input",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "locations": {
+            "title": "Locations",
+            "type": "array",
+            "editor": "json",
+            "description": "US locations to brief. `{ \"label\": \"optional name\", \"latitude\": 30.2672, \"longitude\": -97.7431 }`",
+            "prefill": [
+                { "label": "Austin, TX", "latitude": 30.2672, "longitude": -97.7431 }
+            ]
+        },
+        "forecastPeriods": {
+            "title": "Forecast periods",
+            "type": "integer",
+            "description": "How many ~12-hour NWS forecast periods to include per location (4 ≈ next 2 days).",
+            "default": 4
+        }
+    },
+    "required": ["locations"]
+}
