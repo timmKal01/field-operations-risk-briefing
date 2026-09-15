@@ -18,6 +18,5 @@
             "description": "How many ~12-hour NWS forecast periods to include per location (4 ≈ next 2 days).",
             "default": 4
         }
-    },
-    "required": ["locations"]
+    }
 }

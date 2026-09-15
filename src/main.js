@@ -5,7 +5,7 @@ import { getCurrentSpaceWeather } from './spaceweather.js';
 await Actor.init();
 
 const input = (await Actor.getInput()) ?? {};
-const { locations = [], forecastPeriods = 4 } = input;
+const { locations = [{ label: 'Austin, TX', latitude: 30.2672, longitude: -97.7431 }], forecastPeriods = 4 } = input;
 
 if (locations.length === 0) {
     throw new Error('No locations provided.');
