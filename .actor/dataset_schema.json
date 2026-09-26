@@ -1,0 +1,67 @@
+{
+    "actorSpecification": 1,
+    "fields": {},
+    "views": {
+        "overview": {
+            "title": "Overview",
+            "transformation": {
+                "fields": [
+                    "label",
+                    "weather.city",
+                    "weather.state",
+                    "spaceWeather.kpIndex",
+                    "spaceWeather.auroraVisibleLatitude",
+                    "spaceWeather.observedAt",
+                    "weather.activeAlerts",
+                    "weather.forecastPeriods",
+                    "briefedAt"
+                ],
+                "flatten": [
+                    "weather",
+                    "spaceWeather"
+                ]
+            },
+            "display": {
+                "component": "table",
+                "properties": {
+                    "label": {
+                        "label": "Label",
+                        "format": "text"
+                    },
+                    "weather.city": {
+                        "label": "Weather: city",
+                        "format": "text"
+                    },
+                    "weather.state": {
+                        "label": "Weather: state",
+                        "format": "text"
+                    },
+                    "spaceWeather.kpIndex": {
+                        "label": "Space weather: Kp index",
+                        "format": "number"
+                    },
+                    "spaceWeather.auroraVisibleLatitude": {
+                        "label": "Space weather: aurora visible latitude",
+                        "format": "number"
+                    },
+                    "spaceWeather.observedAt": {
+                        "label": "Space weather: observed at",
+                        "format": "date"
+                    },
+                    "weather.activeAlerts": {
+                        "label": "Weather: active alerts",
+                        "format": "array"
+                    },
+                    "weather.forecastPeriods": {
+                        "label": "Weather: forecast periods",
+                        "format": "array"
+                    },
+                    "briefedAt": {
+                        "label": "Briefed at",
+                        "format": "date"
+                    }
+                }
+            }
+        }
+    }
+}
