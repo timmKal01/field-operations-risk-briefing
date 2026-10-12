@@ -58,6 +58,12 @@ per-location measurement, current conditions are shared globally. Compare
 it against a location's latitude yourself (as above: Fairbanks at 64.8°N is
 above the 62.4° aurora viewline, so aurora is plausible there tonight).
 
+**Locations that can't be checked** still get a row, with `"status": "error"`
+and an `error` saying why, and they aren't charged. That covers points outside
+the United States and its territories (the National Weather Service only
+covers the US) and coordinates that aren't numbers. Coordinates written as
+text, like `"30.2672"`, work. Every other row has `"status": "ok"`.
+
 ## How it works
 
 Two official, keyless US-government JSON APIs, no scraping, no proxy:
@@ -80,4 +86,5 @@ Need just one signal instead of the combined briefing?
 
 Billed per **location briefed** — the shared space-weather fetch doesn't
 add cost per location, so briefing 10 locations costs the same as briefing
-1 for the space-weather portion.
+1 for the space-weather portion. Locations that come back with an error
+aren't charged.

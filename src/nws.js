@@ -27,7 +27,8 @@ async function fetchJson(url) {
         }
         if (res.ok) return res.json();
         if (!TRANSIENT_STATUSES.has(res.status)) {
-            throw new Error(`Request failed: ${url} (${res.status})`);
+            // Keep the status so the caller can tell "outside NWS coverage" (404) from a real failure.
+            throw Object.assign(new Error(`Request failed: ${url} (${res.status})`), { status: res.status });
         }
         lastError = new Error(`Request failed: ${url} (${res.status})`);
         if (attempt < MAX_ATTEMPTS) await sleep(1000 * 2 ** (attempt - 1));

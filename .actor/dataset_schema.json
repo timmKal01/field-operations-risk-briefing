@@ -7,6 +7,7 @@
             "transformation": {
                 "fields": [
                     "label",
+                    "status",
                     "weather.city",
                     "weather.state",
                     "spaceWeather.kpIndex",
@@ -14,7 +15,8 @@
                     "spaceWeather.observedAt",
                     "weather.activeAlerts",
                     "weather.forecastPeriods",
-                    "briefedAt"
+                    "briefedAt",
+                    "error"
                 ],
                 "flatten": [
                     "weather",
@@ -26,6 +28,10 @@
                 "properties": {
                     "label": {
                         "label": "Label",
+                        "format": "text"
+                    },
+                    "status": {
+                        "label": "Status",
                         "format": "text"
                     },
                     "weather.city": {
@@ -59,6 +65,10 @@
                     "briefedAt": {
                         "label": "Briefed at",
                         "format": "date"
+                    },
+                    "error": {
+                        "label": "Error (not charged)",
+                        "format": "text"
                     }
                 }
             }
