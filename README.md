@@ -1,15 +1,25 @@
-# Field Operations Risk Briefing — Weather + GPS/Radio Conditions
+# Field Ops Risk Briefing: Weather & GPS Conditions
 
-Give it US locations. Get back the NWS forecast and active weather alerts
-**plus** current space-weather conditions — Kp index, GPS/HF-radio-relevant
-radio blackout severity, and aurora-visible latitude — in one briefing per
-location, instead of checking weather.gov and spaceweather-style sites
-separately.
+A go/no-go risk briefing for outdoor and field operations in the U.S.: the
+weather forecast, active weather alerts, and GPS and radio conditions for
+each work site, in one row. For survey and precision agriculture crews,
+drone operators, utility and remote field teams, and anyone planning work
+that depends on both the weather and reliable GPS or HF radio.
 
-Built for anyone whose fieldwork depends on both what's happening on the
-ground and overhead: precision-ag/survey teams relying on GPS accuracy, HF
-radio operators (ham, aviation, remote utility crews), and drone/UAV
-operations planning around both storms and radio blackouts.
+## What you get
+
+One briefing per location:
+
+- The National Weather Service forecast for the coming periods
+- Any active weather alerts for that spot
+- Current space weather: the Kp index (geomagnetic storm level, which can degrade GPS accuracy), the radio blackout level for HF radio, and how far south the aurora is visible
+
+## Who this is for
+
+- **Survey and precision agriculture teams** whose GPS accuracy suffers during geomagnetic storms.
+- **Drone and UAV operators** planning flights around both storms and GPS conditions.
+- **Utility, aviation and remote crews on HF radio** checking for radio blackouts.
+- **Field service managers** deciding whether to send crews out.
 
 ## Input
 

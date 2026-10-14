@@ -2,7 +2,7 @@
     "actorSpecification": 1,
     "name": "field-operations-risk-briefing",
     "title": "Field Ops Risk Briefing: Weather & GPS Conditions",
-    "description": "Per US location: NWS forecast and active weather alerts, plus current space-weather conditions (Kp index, GPS/HF-radio-relevant radio blackout severity, aurora latitude) in one briefing for outdoor and field operations.",
+    "description": "A go/no-go risk briefing for U.S. field operations: weather forecast, active weather alerts, and GPS and HF radio conditions (Kp index, radio blackout level, aurora line) for each work site in one row. For survey, drone, agriculture, utility and field service teams.",
     "version": "0.1",
     "meta": {
         "templateId": "custom-no-proxy"
