@@ -89,8 +89,8 @@ to refetch it per location.
 
 Need just one signal instead of the combined briefing?
 
-- [US Weather Tracker](https://github.com/timmKal01/us-weather-tracker) — NWS forecast/alerts only, per location
-- [Space Weather Alert](https://github.com/timmKal01/space-weather-alert) — Kp/radio-blackout/aurora/NOAA alerts only, global snapshot
+- [US Weather Forecast & Alerts API (NWS)](https://apify.com/m_ctim/us-weather-tracker): NWS forecast/alerts only, per location
+- [Space Weather Alerts](https://apify.com/m_ctim/space-weather-alert): Kp/radio-blackout/aurora/NOAA alerts only, global snapshot
 
 ## Pricing note
 
